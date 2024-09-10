@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Wash Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="Logo" class="logo" />
+            <h1>Car Wash Manager</h1>
+        </div>
+
+        <div class="form-container">
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" />
+            </div>
+            <div class="form-group">
+                <label for="carBrand">Car Brand:</label>
+                <select id="carBrand">
+                    <option value="Toyota">Toyota</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Land Rover">Land Rover</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Suzuki">Suzuki</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="carModel">Car Make:</label>
+                <input type="text" id="carModel" />
+            </div>
+            <div class="form-group">
+                <label for="carRegistration">Car Registration:</label>
+                <input type="text" id="carRegistration" />
+            </div>
+            <div class="form-group">
+                <label for="washed">Washed:</label>
+                <input type="checkbox" id="washed" />
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <input type="text" id="comment" />
+            </div>
+            <button id="addButton">Add to Data Grid</button>
+            <button id="printButton">Print Data Grid</button>
+        </div>
+
+        <div class="table-container">
+            <div class="print-header">
+                <div class="print-title">MBH Car Wash Report</div>
+                <img src="logo.png" alt="Logo" class="print-logo" />
+            </div>
+            <table id="dataGrid">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Car Brand</th>
+                        <th>Car Make</th>
+                        <th>Car Registration</th>
+                        <th>Washed</th>
+                        <th>Comment</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
